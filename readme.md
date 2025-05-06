@@ -2,6 +2,10 @@
 
 This project is a simple **Reminders API** built with **Node.js**, **Express**, and **TypeScript**. It allows users to create, update, delete, and view reminders. The project also includes a basic front-end interface for interacting with the API.
 
+##Image
+
+![image](https://github.com/user-attachments/assets/02481f6e-876a-4b82-8edf-024dc37a9aae)
+
 ## Features
 
 - **Create Reminders**: Add new reminders with a title.
