@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/views/styles.css" />
+    <title>Reminder App</title>
+  </head>
+  <body>
+    <h1>Manage Reminders</h1>
+    <main>
+      <!-- Form to create a new reminder -->
+      <section>
+        <h2>Create a Reminder</h2>
+        <form action="/reminders" method="POST">
+          <fieldset>
+            <label for="title_input">Title</label>
+            <input id="title_input" type="text" name="title" required />
+            <input type="submit" value="Create Reminder" />
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- Form to update the isComplete status -->
+      <section>
+        <h2>Update Reminder Status</h2>
+        <form id="update-form">
+          <fieldset>
+            <label for="id_input">Reminder ID</label>
+            <input id="id_input" type="number" name="id" required />
+
+            <label for="is_complete_input">Is Complete</label>
+            <select id="is_complete_input" name="isComplete" required>
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+
+            <button type="button" id="update-button">Update Reminder</button>
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <h2>Delete a Reminder</h2>
+        <form id="delete-form">
+          <fieldset>
+            <label for="delete_id_input">Reminder ID</label>
+            <input id="delete_id_input" type="number" name="id" required />
+            <button type="button" id="delete-button">Delete Reminder</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Include Axios -->
+    <script src="../views/script.js"></script>
+  </body>
+</html>
